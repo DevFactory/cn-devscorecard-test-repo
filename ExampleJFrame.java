@@ -56,6 +56,12 @@ public class ExampleJFrame extends JFrame {
      {"Jia", "2000", "Analyst"},
      {"Brooks", "1998", "Evangelist"}
    };
+   String[][] data2 = {
+     {"Jordan2", "2001", "Director"},
+     {"Naveen2", "1999", "Programmer"},
+     {"Jia2", "2000", "Analyst"},
+     {"Brooks2", "1998", "Evangelist"}
+   };
    JTable table = new JTable(data, titles);
    table.getAccessibleContext().setAccessibleDescription("Employee Statistics");
    JPanel rightPane = new JPanel(new BorderLayout());
@@ -69,10 +75,12 @@ public class ExampleJFrame extends JFrame {
    JPanel bPane = new JPanel();
    JButton okButton = new JButton("Ok");
    JButton applyButton = new JButton("Apply");
-   JButton clearButton = new JButton("Clear");
+   JButton clearButtons = new JButton("Clear");
+   JButton randomButtons = new JButton("Random");
    bPane.add(okButton);
    bPane.add(applyButton);
-   bPane.add(clearButton);
+   bPane.add(clearButtons);
+   bPane.add(randomButtons);
 
    getContentPane().add(bPane, BorderLayout.SOUTH);
 
